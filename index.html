@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- DGL 103 CVS3 - Sagun Shrestha - Project-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+<!--Learn this auto scroll from w3School-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+  </head>
+  <body>
+    <!--Got this code from week9 assignment-->
+    <header>
+      <div class="wrapper-width">
+        <img src="Image/PHI-Logo-full-white.svg" width="150" alt="form logo">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html" target="_blank">About</a>
+            </li>
+            <li>
+              <a href="project.html" target="_blank">Project</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <!--Learned how to put video in background from youtube and w3school-->
+        <video autoplay loop muted class="back-video">
+          <source src="Image/newfirst.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+          <h1>phillipa atwood <br>architect</h1>
+          <!--Slogan from google-->
+          <p>"Designing Dreams,Building Realities"</p>
+          <p>Your Vision,Our Blueprint</p>
+        </div>
+      </section>
+      <section class="projects">
+        <h2>Feature Projects</h2>
+        <div class="items">
+          <a href="project.html" target="blank"
+            >COMOX VALLEY CHILD DEVELOPMENT ASSOCIATION AUTISM CENTRE
+            <br>Courtenay, Daycare and Schools</a
+          >
+          <div class="info">
+            <p>
+              A new addition to the Comox Valley Child Development Association
+              with a gym, meeting rooms and a kitchen for their autism programs.
+              The conceptual sketch is of new ramps planned to improve
+              accessibility to their main building.
+            </p>
+            <div class="read">
+              <a href="project.html" target="blank">Read more</a>
+            </div>
+          </div>
+          <img src="Image/projectfirst.jpg" alt="project">
+        </div>
+        <div class="items2">
+          <div class="info">
+            <p class="down">
+              Renovation to an existing building to add offices and the main
+              entry canopy for a surveying and engineering company. A new
+              two-storey addition is planned.
+            </p>
+            <div class="read">
+              <a href="project.html" target="blank">Read more</a>
+            </div>
+          </div>
+          <img src="Image/projectsecond.jpg" alt="project">
+          <a href="project.html" target="blank"
+            >McELHANNEY OFFICES <br>Commercial, Courtenay</a
+          >
+        </div>
+        <div class="items3">
+          <img src="Image/thirdproject.jpg" alt="project">
+          <a href="project.html" target="blank"
+            >DENMAN ISLAND CHILDCARE<br>Daycare and Schools, Denman Island</a
+          >
+          <div class="info">
+            <p class="down">
+              Renovation to an existing building to add offices and the main
+              entry canopy for a surveying and engineering company. A new
+              two-storey addition is planned.
+            </p>
+            <div class="read">
+              <a href="project.html" target="blank">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="view">
+          <a href="project.html" target="_blank">VIEW MORE PROJECTS</a>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="item">
+            <h2>Phillipa Atwood</h2>
+            <p>
+              Architecture is successful when it is functional, practical,
+              beautiful, durable and uniquely suited to its place. We specialize
+              in assisting our clients to achieve the architecture that fits
+              their needs, aspirations, personality, budget, and of course,
+              their unique site.
+            </p>
+            <a href="about.html" target="blank">ABOUT US</a>
+          </div>
+          <img src="Image/Phillipa.jpg" alt="photo" width="320" height="350">
+        </div>
+      </section>
+      <section class="services">
+        <h2>Our Services</h2>
+        <div class="container">
+          <div class="Service1">
+            <img
+              src="Image/service.webp"
+              alt="Service1"
+              width="255"
+              height="197"
+            >
+            <!--Written by chatgpt-->
+            <h3>Architectural Consulting Services</h3>
+            <p>
+              The firm is committed to achieving excellence in architectural
+              consulting services. This includes translating the needs of
+              clients into aesthetically pleasing and functional environments.
+            </p>
+          </div>
+          <div class="Service2">
+            <img
+              src="Image/service1.jpg"
+              alt="Service2"
+              width="255"
+              height="197"
+            >
+            <!--Written by chatgpt-->
+            <h3>Design Strategies and Project Management</h3>
+            <p>
+              The firm embraces the challenge of delivering design strategies
+              and project management that respond pragmatically to client
+              requirements. This implies that they are involved in the entire
+              process from design conceptualization to project completion.
+            </p>
+          </div>
+          <div class="Service3">
+            <img
+              src="Image/service2.jfif"
+              alt="Service3"
+              width="255"
+              height="197"
+            >
+              <!--Written by chatgpt-->
+            <h3>Environmental Stewardship and LEED Accreditation</h3>
+            <p>
+              The firm adheres to high standards in environmental stewardship
+              and has a LEED® Accredited Professional named Phillipa. They
+              strive to craft energy-efficient and environmentally sensitive
+              buildings, showcasing a commitment to sustainable and eco-friendly
+              design practices.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="contain">
+        <div class="brand">
+          <a
+            href="https://www.facebook.com/profile.php?id=100065324086897"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/@phiarchitecture2263" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="mailto:pippa@patwoodarchitect.ca" target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.google.com/maps/place/5+Little+Bear+Way,+Royston,+BC+V0R+2V0/@49.6462843,-124.9540951,17z/data=!3m1!4b1!4m6!3m5!1s0x548814afb0823cb3:0xcd0bec47784d7a77!8m2!3d49.6462843!4d-124.9540951!16s%2Fg%2F11c1x_m0gk?entry=ttu"
+            target="_blank"
+            ><i class="fa-solid fa-location-dot"></i
+          ></a>
+          <a href="Tel:2507030433"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <div class="Navbar">
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="project.html">Project</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+          <div class="last">
+            <p> “This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.”
+            </p>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>

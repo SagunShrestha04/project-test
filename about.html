@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- DGL 103 CVS3 - Sagun Shrestha - Project-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <style>
+        @media only screen and (max-width:767px){
+        header{
+            padding: 5px;
+            background-color: gray;
+        }
+        header img{
+            height: 60px;
+            margin-top: 0px;
+        }
+        header ul{
+            margin-right: 15px;
+        }
+        .aboutpage h2{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 40px;
+        color: #A1AEB7;
+       }
+       .aboutcontainer img{
+        border-radius: 10px;
+        margin-top: 0px;
+       }
+  }
+  @media only screen and (min-width:1024px){
+        header{
+            padding: 5px;
+            background-color: gray;
+        }
+        header img{
+            height: 60px;
+            margin-top: 0px;
+        }
+        header ul{
+            margin-right: 15px;
+        }
+        .aboutpage h2{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 40px;
+        color: #A1AEB7;
+       }
+       .aboutcontainer img{
+        border-radius: 10px;
+        margin-top: 30px;
+       }
+    }
+    </style>
+    <!--Learn this auto scroll from w3School-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+  </head>
+  <body>
+    <!--Got this code from week9 assignment-->
+    <header>
+      <div class="wrapper-width">
+        <img src="Image/PHI-Logo-full-white.svg" width="150" alt="form logo">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" target="_blank">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="project.html" target="_blank">Project</a>
+            </li>
+            <li>
+              <a href="#contact" target="_blank">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <section class="aboutpage">
+            <h2>About us</h2>
+            <div class="aboutcontainer">
+                <img src="Image/Phillipa.jpg" alt="photo" width="320" height="350">
+              <div class="aboutitem">
+                <h3>Phillipa Atwood</h3>
+                <p>Architecture is successful when it is functional, practical, beautiful, durable and uniquely suited to its place. We specialize in assisting our clients to achieve the architecture that fits their needs, aspirations, personality, budget, and of course, their unique site.
+
+                    Our speciality is local. Since 2004 our office in the Comox Valley has provided ready access to building sites on Vancouver Island and along the BC coastline. We are familiar with local authorities having jurisdiction, local bylaws, climate and builders. We have a proven track record with commercial, residential and small institutional projects for new construction and renovations. No project is too small to benefit from good design.
+                    
+                    We are committed to achieving excellence in architectural consulting services. We understand the process of translating the needs of our clients into beautiful and successfully functioning environments. We enthusiastically embrace the challenge of delivering design strategies and project management that responds pragmatically to our client’s requirements. High standards in environmental stewardship are a guiding principle of our practice. As a LEED® Accredited Professional Phillipa strives to craft energy-efficient and environmentally sensitive buildings. We are committed to creating buildings that make a meaningful contribution to the lives of their owners and their community.</p>
+            </div>
+        </div>
+      </section>
+      <section class="table">
+        <h2>Architectural Affiliations and Certifications</h2>
+        <table>
+            <tr>
+                <th>Acronym</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>AIBC</td>
+                <td>Architectural Institute of British Columbia</td>
+              </tr>
+              <tr>
+                <td>RAIC</td>
+                <td>Royal Architectural Institute of Canada</td>
+              </tr>
+              <tr>
+                <td>RAIC - VANCOUVER ISLAND</td>
+                <td>Regional chapter of RAIC for Vancouver Island</td>
+              </tr>
+              <tr>
+                <td>CAGBC</td>
+                <td>Canada Green Building Council</td>
+              </tr>
+              <tr>
+                <td>LEED®</td>
+                <td>Leadership in Energy and Environmental Design</td>
+              </tr>
+              <tr>
+                <td>ROTARY</td>
+                <td>Rotary International</td>
+              </tr>
+        </table>
+      </section>
+      <section class="contactus">
+        <div class="container">
+            <h2>Send us messages for any info.</h2>
+            <form action="mailto:pippa@patwoodarchitect.ca">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Full Name">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+              <label for="subject"><br>Message</label>
+              <textarea id="subject" name="subject" placeholder="Type your Message." style="height:200px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+        </div>
+      </section>
+    </main>
+    <!--same as homr page-->
+    <footer id="contact">
+        <div class="contain">
+          <div class="brand">
+            <a
+              href="https://www.facebook.com/profile.php?id=100065324086897"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.youtube.com/@phiarchitecture2263" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="mailto:pippa@patwoodarchitect.ca" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.google.com/maps/place/5+Little+Bear+Way,+Royston,+BC+V0R+2V0/@49.6462843,-124.9540951,17z/data=!3m1!4b1!4m6!3m5!1s0x548814afb0823cb3:0xcd0bec47784d7a77!8m2!3d49.6462843!4d-124.9540951!16s%2Fg%2F11c1x_m0gk?entry=ttu"
+              target="_blank"
+              ><i class="fa-solid fa-location-dot"></i
+            ></a>
+            <a href="Tel:2507030433"><i class="fa-solid fa-phone"></i></a>
+          </div>
+          <div class="Navbar">
+            <nav>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="project.html">Project</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+            <div class="last">
+              <p> “This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.”
+              </p>
+            </div>
+        </div>
+      </footer>
+  </body>
+</html>
