@@ -20,31 +20,40 @@
       referrerpolicy="no-referrer"
     >
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Raleway:wght@500&display=swap" rel="stylesheet">
-<!--Learn this auto scroll from w3School-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    >
+    <!--Learn this auto scroll from w3School-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
       });
-    }
-  });
-});
-</script>
+    </script>
   </head>
   <body>
     <!--Got this code from week9 assignment-->
     <header>
       <div class="wrapper-width">
-        <a href="index.html"><img src="Image/PHI-Logo-full-white.svg" width="150" alt="form logo"></a>
+        <a href="index.html"
+          ><img src="Image/PHI-Logo-full-white.svg" width="150" alt="form logo"
+        ></a>
         <nav>
           <ul>
             <li>
@@ -189,7 +198,7 @@ $(document).ready(function(){
               width="255"
               height="197"
             >
-              <!--Written by chatgpt-->
+            <!--Written by chatgpt-->
             <h3>Environmental Stewardship and LEED Accreditation</h3>
             <p>
               The firm adheres to high standards in environmental stewardship
@@ -241,10 +250,14 @@ $(document).ready(function(){
             </ul>
           </nav>
         </div>
-          <div class="last">
-            <p> “This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.”
-            </p>
-          </div>
+        <div class="last">
+          <p>
+            “This is a fictional website that was designed and coded as an
+            educational exercise. It is not intended to be seen outside of the
+            class environment. None of the content and images were approved by
+            the business owner.”
+          </p>
+        </div>
       </div>
     </footer>
   </body>

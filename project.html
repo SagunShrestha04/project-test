@@ -20,60 +20,68 @@
       referrerpolicy="no-referrer"
     >
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Raleway:wght@500&display=swap" rel="stylesheet">
-<style>
-    @media only screen and (max-width:767px){
-    header{
-        padding: 5px;
-        background-color: gray;
-    }
-    header img{
-        height: 60px;
-        margin-top: 0px;
-    }
-    header ul{
-        margin-right: 15px;
-    }
-}
-@media only screen and (min-width:1024px){
-    header{
-        padding: 5px;
-        background-color: gray;
-    }
-    header img{
-        height: 60px;
-        margin-top: 0px;
-    }
-    header ul{
-        margin-right: 15px;
-    }
-}
-</style>
-<!--Learn this auto scroll from w3School-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+      @media only screen and (max-width: 767px) {
+        header {
+          padding: 5px;
+          background-color: gray;
+        }
+        header img {
+          height: 60px;
+          margin-top: 0px;
+        }
+        header ul {
+          margin-right: 15px;
+        }
+      }
+      @media only screen and (min-width: 1024px) {
+        header {
+          padding: 5px;
+          background-color: gray;
+        }
+        header img {
+          height: 60px;
+          margin-top: 0px;
+        }
+        header ul {
+          margin-right: 15px;
+        }
+      }
+    </style>
+    <!--Learn this auto scroll from w3School-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
       });
-    }
-
-  });
-});
-</script>
+    </script>
   </head>
   <body>
     <!--Got this code from week9 assignment-->
     <header>
       <div class="wrapper-width">
-        <a href="index.html"><img src="Image/PHI-Logo-full-white.svg" width="150" alt="form logo"></a>
+        <a href="index.html"
+          ><img src="Image/PHI-Logo-full-white.svg" width="150" alt="form logo"
+        ></a>
         <nav>
           <ul>
             <li>
@@ -93,140 +101,238 @@ $(document).ready(function(){
       </div>
     </header>
     <main>
-        <h2>Projects</h2>
-        <section class="pcontainer">
-            <div class="pcards">
-                <div class="card image">
-                    <img src="Image/projectfirst.jpg" alt="project"></div>
-                    <h3>COMOX VALLEY CHILD DEVELOPMENT ASSOCIATION AUTISM CENTRE</h3>
-                    <h4>Courtenay, Daycare and Schools</h4>
-                    <!--written by chatgpt-->
-                    <p>A new addition to the Comox Valley Child Development Association with a gym, meeting rooms and a kitchen for their autism programs. The conceptual sketch is of new ramps planned to improve accessibility to their main building.</p>
-                    <a href="https://phiarchitecture.ca/2020/12/12/comox-valley-child-development-association-autism-centre/" target="_blank">Read More</a>
-            </div>
-            <div class="pcards">
-                <div class="card image">
-                    <img src="Image/projectsecond.jpg" alt="project"></div>
-                    <h3>McELHANNEY OFFICES</h3>
-                    <h4>Commercial, Courtenay</h4>
-                    <!--written by chatgpt-->
-                    <p>Renovation to an existing building to add offices and the main entry canopy for a surveying and engineering company.The ongoing project involves the renovation of an existing building to accommodate additional office space and the installation of a striking main entry canopy for a surveying and engineering company.</p>
-                    <a href="https://phiarchitecture.ca/2020/12/11/mcelhanney/" target="_blank">Read More</a>
-            </div>
-      <div class="pcards">
-                <div class="card image">
-                    <img src="Image/thirdproject.jpg" alt="project"></div>
-                    <h3>DENMAN ISLAND CHILDCARE</h3>
-                    <h4>Daycare and Schools, Denman Island</h4>
-                    <!--written by chatgpt-->
-                    <p>This project introduces a purposeful addition to Denman Island's educational infrastructure. Adjacent to the community school, the new building is specifically designed for daycare and early childhood education. It includes separate rooms for toddlers and pre-schoolers, a staff room, and a spacious central hallway promoting active play.</p>
-                    <a href="https://phiarchitecture.ca/2020/12/09/denman-island-childcare/" target="_blank">Read More</a>
-            </div>
-        </section>
-            <section class="pcontainer">
-            <div class="pcards">
-                <div class="card image">
-                    <img src="Image/project4.jpg" alt="project"></div>
-                    <h3>CHALET, MT. WASHINGTON ALPINE RESORT</h3>
-                    <h4>Courtenay, Residential</h4>
-                    <!--written by chatgpt-->
-                    <p>Perched on the slopes of Mt. Washington Alpine Resort in Courtenay, the CHALET is a single-family residence that gracefully steps down the steep terrain, providing stunning views of Strathcona Provincial Park. This alpine-inspired home seamlessly integrates with its surroundings, offering a unique and charming retreat within the natural landscape.</p>
-                    <a href="https://phiarchitecture.ca/2020/12/11/mt-washington-chalet/" target="_blank">Read More</a>
-            </div>
-            <div class="pcards">
-                <div class="card image">
-                    <img src="Image/project5.jpg" alt="project"></div>
-                    <h3>THE VICTORY</h3>
-                    <h4>Commercial, Cumberland, Residential</h4>
-                    <!--written by chatgpt-->
-                    <p>In the heart of Cumberland, THE VICTORY is a newly erected 4-storey building, marrying commercial vitality at street level with 14 residential units above, including four distinctive rooftop micro-units. 
-                        Its contemporary design not only enriches the urban landscape but also seamlessly aligns with the neighboring Waverley addition, a testament to Cumberland's evolving architectural narrative, blending tradition with innovation.</p>
-                    <a href="https://phiarchitecture.ca/2020/12/10/the-victory/" target="_blank">Read More</a>
-            </div>
-            <div class="pcards">
-                <div class="card image">
-                    <img src="Image/project6.jpg" alt="project"></div>
-                    <h3>QUADRA ISLAND SENIORS RESIDENCES</h3>
-                    <h4>Quadra Island, Residential</h4>
-                    <!--written by chatgpt-->
-                    <p>Quadra Island Seniors Residences, a collaborative effort between Quadra Island Seniors Housing Society, BC Housing, and CMHC, introduces a 16-unit senior residence at the heart of Quadra Island. This vital addition meets the community's needs for senior living with centralized accessibility, fostering a supportive environment for aging residents and promoting social engagement.</p>
-                    <a href="https://phiarchitecture.ca/2020/12/08/quadra-island-seniors-residences/" target="_blank">Read More</a>
-            </div>
-        </section>
-    <section class="pcontainer">
-    <div class="pcards">
-        <div class="card image">
-            <img src="Image/project7.jpg" alt="project"></div>
-            <h3>PINECREST ELEMENTARY CANOPY</h3>
-            <h4>Campbell River, Daycare and Schools</h4>
-              <!--written by chatgpt-->
-             <p>A new entry canopy and façade improvement enhance Pinecrest Elementary's main entrance, emphasizing aesthetics and functionality.</p>
-            <a href="https://phiarchitecture.ca/2020/12/05/pinecrest-elementary-school-campbell-river/" target="_blank">Read More</a>
-    </div>
-    <div class="pcards">
-        <div class="card image">
-            <img src="Image/project8.jpg" alt="project"></div>
-            <h3>EDGETT EXCAVATING OFFICES</h3>
-            <h4>Commercial, Cumberland</h4>
-              <!--written by chatgpt-->
-            <p>A new 2-story building with offices and a spacious shop enhances operational efficiency and overall aesthetics for excavation.</p>
-            <a href="https://phiarchitecture.ca/2020/12/04/edgett-excavating-offices/" target="_blank">Read More</a>
-    </div>
-    <div class="pcards">
-        <div class="card image">
-            <img src="Image/project9.jpeg" alt="project"></div>
-            <h3>TIGGER TOO CHILDCARE FACILITY</h3>
-            <h4>Comox, Daycare and Schools</h4>
-              <!--written by chatgpt-->
-            <p>An addition to increase capacity for the Comox Valley Children’s Daycare Society. The angled cladding represents tree branches.</p>
-            <a href="https://phiarchitecture.ca/2020/12/07/tigger-daycare/" target="_blank">Read More</a>
-    </div>
-</section>
+      <h2>Projects</h2>
+      <section class="pcontainer">
+        <div class="pcards">
+          <div class="card image">
+            <img src="Image/projectfirst.jpg" alt="project">
+          </div>
+          <h3>COMOX VALLEY CHILD DEVELOPMENT ASSOCIATION AUTISM CENTRE</h3>
+          <h4>Courtenay, Daycare and Schools</h4>
+          <!--written by chatgpt-->
+          <p>
+            A new addition to the Comox Valley Child Development Association
+            with a gym, meeting rooms and a kitchen for their autism programs.
+            The conceptual sketch is of new ramps planned to improve
+            accessibility to their main building.
+          </p>
+          <a
+            href="https://phiarchitecture.ca/2020/12/12/comox-valley-child-development-association-autism-centre/"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+        <div class="pcards">
+          <div class="card image">
+            <img src="Image/projectsecond.jpg" alt="project">
+          </div>
+          <h3>McELHANNEY OFFICES</h3>
+          <h4>Commercial, Courtenay</h4>
+          <!--written by chatgpt-->
+          <p>
+            Renovation to an existing building to add offices and the main entry
+            canopy for a surveying and engineering company.The ongoing project
+            involves the renovation of an existing building to accommodate
+            additional office space and the installation of a striking main
+            entry canopy for a surveying and engineering company.
+          </p>
+          <a
+            href="https://phiarchitecture.ca/2020/12/11/mcelhanney/"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+        <div class="pcards">
+          <div class="card image">
+            <img src="Image/thirdproject.jpg" alt="project">
+          </div>
+          <h3>DENMAN ISLAND CHILDCARE</h3>
+          <h4>Daycare and Schools, Denman Island</h4>
+          <!--written by chatgpt-->
+          <p>
+            This project introduces a purposeful addition to Denman Island's
+            educational infrastructure. Adjacent to the community school, the
+            new building is specifically designed for daycare and early
+            childhood education. It includes separate rooms for toddlers and
+            pre-schoolers, a staff room, and a spacious central hallway
+            promoting active play.
+          </p>
+          <a
+            href="https://phiarchitecture.ca/2020/12/09/denman-island-childcare/"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+      </section>
+      <section class="pcontainer">
+        <div class="pcards">
+          <div class="card image">
+            <img src="Image/project4.jpg" alt="project">
+          </div>
+          <h3>CHALET, MT. WASHINGTON ALPINE RESORT</h3>
+          <h4>Courtenay, Residential</h4>
+          <!--written by chatgpt-->
+          <p>
+            Perched on the slopes of Mt. Washington Alpine Resort in Courtenay,
+            the CHALET is a single-family residence that gracefully steps down
+            the steep terrain, providing stunning views of Strathcona Provincial
+            Park. This alpine-inspired home seamlessly integrates with its
+            surroundings, offering a unique and charming retreat within the
+            natural landscape.
+          </p>
+          <a
+            href="https://phiarchitecture.ca/2020/12/11/mt-washington-chalet/"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+        <div class="pcards">
+          <div class="card image">
+            <img src="Image/project5.jpg" alt="project">
+          </div>
+          <h3>THE VICTORY</h3>
+          <h4>Commercial, Cumberland, Residential</h4>
+          <!--written by chatgpt-->
+          <p>
+            In the heart of Cumberland, THE VICTORY is a newly erected 4-storey
+            building, marrying commercial vitality at street level with 14
+            residential units above, including four distinctive rooftop
+            micro-units. Its contemporary design not only enriches the urban
+            landscape but also seamlessly aligns with the neighboring Waverley
+            addition, a testament to Cumberland's evolving architectural
+            narrative, blending tradition with innovation.
+          </p>
+          <a
+            href="https://phiarchitecture.ca/2020/12/10/the-victory/"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+        <div class="pcards">
+          <div class="card image">
+            <img src="Image/project6.jpg" alt="project">
+          </div>
+          <h3>QUADRA ISLAND SENIORS RESIDENCES</h3>
+          <h4>Quadra Island, Residential</h4>
+          <!--written by chatgpt-->
+          <p>
+            Quadra Island Seniors Residences, a collaborative effort between
+            Quadra Island Seniors Housing Society, BC Housing, and CMHC,
+            introduces a 16-unit senior residence at the heart of Quadra Island.
+            This vital addition meets the community's needs for senior living
+            with centralized accessibility, fostering a supportive environment
+            for aging residents and promoting social engagement.
+          </p>
+          <a
+            href="https://phiarchitecture.ca/2020/12/08/quadra-island-seniors-residences/"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+      </section>
+      <section class="pcontainer">
+        <div class="pcards">
+          <div class="card image">
+            <img src="Image/project7.jpg" alt="project">
+          </div>
+          <h3>PINECREST ELEMENTARY CANOPY</h3>
+          <h4>Campbell River, Daycare and Schools</h4>
+          <!--written by chatgpt-->
+          <p>
+            A new entry canopy and façade improvement enhance Pinecrest
+            Elementary's main entrance, emphasizing aesthetics and
+            functionality.
+          </p>
+          <a
+            href="https://phiarchitecture.ca/2020/12/05/pinecrest-elementary-school-campbell-river/"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+        <div class="pcards">
+          <div class="card image">
+            <img src="Image/project8.jpg" alt="project">
+          </div>
+          <h3>EDGETT EXCAVATING OFFICES</h3>
+          <h4>Commercial, Cumberland</h4>
+          <!--written by chatgpt-->
+          <p>
+            A new 2-story building with offices and a spacious shop enhances
+            operational efficiency and overall aesthetics for excavation.
+          </p>
+          <a
+            href="https://phiarchitecture.ca/2020/12/04/edgett-excavating-offices/"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+        <div class="pcards">
+          <div class="card image">
+            <img src="Image/project9.jpeg" alt="project">
+          </div>
+          <h3>TIGGER TOO CHILDCARE FACILITY</h3>
+          <h4>Comox, Daycare and Schools</h4>
+          <!--written by chatgpt-->
+          <p>
+            An addition to increase capacity for the Comox Valley Children’s
+            Daycare Society. The angled cladding represents tree branches.
+          </p>
+          <a
+            href="https://phiarchitecture.ca/2020/12/07/tigger-daycare/"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+      </section>
     </main>
     <footer id="contact">
-        <div class="contain">
-          <div class="brand">
-            <a
-              href="https://www.facebook.com/profile.php?id=100065324086897"
-              target="_blank"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://www.youtube.com/@phiarchitecture2263" target="_blank"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-            <a href="mailto:pippa@patwoodarchitect.ca" target="_blank"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-            <a
-              href="https://www.google.com/maps/place/5+Little+Bear+Way,+Royston,+BC+V0R+2V0/@49.6462843,-124.9540951,17z/data=!3m1!4b1!4m6!3m5!1s0x548814afb0823cb3:0xcd0bec47784d7a77!8m2!3d49.6462843!4d-124.9540951!16s%2Fg%2F11c1x_m0gk?entry=ttu"
-              target="_blank"
-              ><i class="fa-solid fa-location-dot"></i
-            ></a>
-            <a href="Tel:2507030433"><i class="fa-solid fa-phone"></i></a>
-          </div>
-          <div class="Navbar">
-            <nav>
-              <ul>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="project.html">Project</a>
-                </li>
-                <li>
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-            <div class="last">
-              <p> “This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.”
-              </p>
-            </div>
+      <div class="contain">
+        <div class="brand">
+          <a
+            href="https://www.facebook.com/profile.php?id=100065324086897"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/@phiarchitecture2263" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="mailto:pippa@patwoodarchitect.ca" target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.google.com/maps/place/5+Little+Bear+Way,+Royston,+BC+V0R+2V0/@49.6462843,-124.9540951,17z/data=!3m1!4b1!4m6!3m5!1s0x548814afb0823cb3:0xcd0bec47784d7a77!8m2!3d49.6462843!4d-124.9540951!16s%2Fg%2F11c1x_m0gk?entry=ttu"
+            target="_blank"
+            ><i class="fa-solid fa-location-dot"></i
+          ></a>
+          <a href="Tel:2507030433"><i class="fa-solid fa-phone"></i></a>
         </div>
-      </footer>
+        <div class="Navbar">
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="project.html">Project</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="last">
+          <p>
+            “This is a fictional website that was designed and coded as an
+            educational exercise. It is not intended to be seen outside of the
+            class environment. None of the content and images were approved by
+            the business owner.”
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
